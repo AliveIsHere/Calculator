@@ -106,3 +106,5 @@ function enableLightMode()
     HTML.classList.remove('dark');
 }
 
+
+console.log("hello world");
