@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/css/app.css">
+  </head>
+  <body class="w-[100vw] h-[100vh] flex justify-center items-center dark:bg-slate-900 transition-all duration-500 ">
+ 
+    <section class="claculator w-full h-full md:w-[50%] md:h-[80%] shadow-2xl shadow-black">
+        <section
+            class="overflow-hidden screen w-full h-[20%] bg-slate-300 dark:bg-blue-400 text-slate-900 dark:text-slate-800 text-5xl flex justify-center items-center font-bold md:rounded-t-3xl">
+            0
+        </section>
+        <section
+            class="key flex justify-start items-start w-full h-[80%] flex-wrap bg-slate-300 dark:bg-slate-700 md:rounded-b-3xl content-start">
+            <button
+                class="w-1/4 h-1/5 bg-gray-400 dark:bg-slate-800 dark:text-slate-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                +
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-400 dark:bg-slate-800 dark:text-slate-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                -
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-400 dark:bg-slate-800 dark:text-slate-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                x
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-400 dark:bg-slate-800 dark:text-slate-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                ÷
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                7
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                8
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                9
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-orange-400 dark:bg-blue-500 dark:text-blue-500 text-orange-400 flex justify-center items-center text-5xl font-bold border-black border border-b-0 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                =
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                4
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500  hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                5
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500  hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                6
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-orange-400 dark:bg-blue-500 dark:text-blue-500 flex justify-center items-center text-5xl font-bold border-black border border-b-0 border-t-[0px] hover:cursor-pointer text-orange-400"
+                onclick="calculator(this.innerText)">
+                =
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                1
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                2
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border  dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                3
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-orange-400 dark:bg-blue-500 dark:text-blue-50 flex justify-center items-start text-5xl font-bold border-black border border-t-0 border-b-0 hover:cursor-pointer"
+                onclick="calculator(this.innerText)">
+                =
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                0
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 flex justify-center items-center text-5xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="calculator(this.innerText)">
+                .
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-gray-100 dark:bg-black dark:text-slate-300 flex justify-center items-center text-4xl font-bold border-black border dark:border dark:border-gray-500 hover:cursor-pointer hover:bg-slate-300 transition"
+                onclick="Clear()">
+                Reset
+            </button>
+            <button
+                class="w-1/4 h-1/5 bg-orange-400 dark:bg-blue-500 dark:text-blue-500 flex justify-center items-center text-5xl font-bold border-black border border-t-0 hover:cursor-pointer text-orange-400" 
+                onclick="calculator(this.innerText)">
+                =
+            </button>
+        </section>
+    </section>
+    <script src="/src/js/app.js"></script>
+</body>
+</html>
