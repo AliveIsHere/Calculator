@@ -2,7 +2,7 @@ let number1 = "0";
 let number2 = "";
 let lastAction = "";
 
-
+console.log("hello world");
 
 const screen = document.getElementsByClassName("screen")[0];
 
