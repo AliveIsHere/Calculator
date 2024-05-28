@@ -3,6 +3,7 @@ let number2 = "";
 let lastAction = "";
 
 
+
 const screen = document.getElementsByClassName("screen")[0];
 
 function calculator(_key) {
